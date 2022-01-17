@@ -1,0 +1,26 @@
+package labTest;
+
+import java.util.Scanner;
+
+class Question2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		int size;
+		int [][] a = new int [11][11];
+		
+		System.out.print("Enter the size: ");
+		size=input.nextInt();
+		
+		
+		for (int i=1; i<11; i++) {
+			for (int y=0; y<10; y++) {
+				a[i][y]=i+(y*i);
+				System.out.printf("%4d", a[i][y]);
+			}
+			System.out.println();
+		}
+		
+}
+}
